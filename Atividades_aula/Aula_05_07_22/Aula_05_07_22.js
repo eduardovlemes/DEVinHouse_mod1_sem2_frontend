@@ -2,8 +2,8 @@
 //document.write(idade)
 
 //var isConfirm = window.confirm()
-//document.white(isConfirm)
-//document.white(typeof isConfirm)
+//document.write(isConfirm)
+//document.write(typeof isConfirm)
 
 
 
