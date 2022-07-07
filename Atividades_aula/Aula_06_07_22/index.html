@@ -8,9 +8,9 @@
 </head>
 <body>
     <script>
-        var n1 = window.prompt("Digite um número:")
-        var n2 = window.prompt("Digite mais um número:")
-        var media = (Number(n1) + Number(n2)) / 2
+        var n1 = Number(window.prompt("Digite um número:"))
+        var n2 = Number(window.prompt("Digite mais um número:"))
+        var media = (n1 + n2) / 2
 
         if (media > 7) {
             document.write(`Sua média foi ${media}, e você foi Aprovado!`)
