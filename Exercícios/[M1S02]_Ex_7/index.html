@@ -8,7 +8,24 @@
 </head>
 <body>
     <script>
-        
+        var cont = 0, resp, usuarios = 0
+
+        while (cont < 4){
+            resp = window.prompt("Qual sua nota para a série 'Stranger Things'? <br>(ruim, bom ou excelente)")
+            switch (resp) {
+                case "ruim":
+                    usuarios++
+                    break;
+                
+                case "bom":
+                    break;
+            
+                case "excelente":
+                    break;
+            }
+            cont++
+        }
+        document.write(`No total, ${usuarios} pessoas entrevistadas acharam a série ruim.`)
     </script>
 </body>
 </html>
