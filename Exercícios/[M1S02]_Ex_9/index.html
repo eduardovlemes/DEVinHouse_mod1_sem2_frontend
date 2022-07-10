@@ -7,6 +7,36 @@
     <title>Exercício 9</title>
 </head>
 <body>
+    <script> 
+    var hortifruti = 0
+    var laticinios = 0
+    var carnes = 0
+    var peixes = 0
+    var aves = 0
+        do {
+           var resp = window.prompt("Por favor, digite o nome do produto que deseja comprar. Digite o número: \n 1) Hortifruti; \n 2) Laticínios; \n 3) Carnes; \n 4) Peixes; \n 5) Aves; \n 6)Fechar pedido.")
+            switch (resp) {
+                case '1':
+                    hortifruti = Number(window.prompt('Digite a quantidade desejada:'))
+                    break;                
+                case '2':
+                    laticinios = Number(window.prompt('Digite a quantidade desejada:'))
+                    break;            
+                case '3':
+                   carnes = Number(window.prompt('Digite a quantidade desejada:'))
+                    break;                
+                case '4':
+                    peixes = Number(window.prompt('Digite a quantidade desejada:'))
+                    break;                
+                case '5':
+                    aves = Number(window.prompt('Digite a quantidade desejada:'))
+                    break;
+            } 
+        }  while (resp < 6)
+        if (resp >= 6) {            
+            document.write(`Lista final: <br> Hortifruti = ${hortifruti} qts. <br> Laticínios = ${laticinios} qts. <br> Carnes = ${carnes} qts. <br> Peixes = ${peixes} qts. <br> Aves = ${aves} qts. <br>`)
+        }       
+    </script>
     
 </body>
 </html>
