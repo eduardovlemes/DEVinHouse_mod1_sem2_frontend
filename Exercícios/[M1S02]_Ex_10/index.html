@@ -7,6 +7,26 @@
     <title>Exercício 10</title>
 </head>
 <body>
-    
+    <script>
+        var nome = window.prompt('Digite o nome do aluno:')           
+        var c = 0
+        var notas = []
+        while (c < 4) {
+            var notaUnidade = Number(window.prompt('Digite a nota do aluno:'))
+            notas.push(notaUnidade)
+            c++
+        }
+        for (var i = 0, total=0; i < notas.length; i++) {
+            total += notas[i]
+        }
+        var media = total/notas.length        
+        //document.write(nome)
+        //document.write(media)        
+        if (media >= 7){
+            document.write(`<h3> Parabéns ${nome}! Sua média nesta disciplina foi ${media} e você foi APROVADO(A)!</h3>`)
+        } else{
+            document.write(`<h3> Não foi dessa vez ${nome}! Sua média nesta disciplina foi ${media} e você foi REPROVADO(A)!</h3>`)
+        }
+    </script>
 </body>
 </html>
